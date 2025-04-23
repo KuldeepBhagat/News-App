@@ -20,6 +20,7 @@ function loadNews(category = 'technology') {
       console.error('Error fetching news:', error);
     });
 }
+loadNews();
 const health = document.getElementById('health');
 health.addEventListener('click', () => {
   loadNews('health');
