@@ -1,5 +1,5 @@
 function loadNews(category = 'technology') {
-  fetch(`http://localhost:3000/news?category=${category}`)
+  fetch(`/api/news?category=${category}`)
     .then(res => res.json())
     .then(articles => {
       const container = document.getElementById('news-container');
