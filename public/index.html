@@ -2,12 +2,32 @@
 <html>
 <head>
   <title>Latest Tech News</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Tech News</h1>
-  <button onclick="loadNews('business')">Business</button>
-  <button onclick="loadNews('sports')">Sports</button>
-  <button id="health">health</button>
+  <header>
+    <div class="leftside">
+      <h1>Headlines</h1>
+      <div class="categories">
+        <button class="category-btn" data-category="health">Health</button>
+        <button class="category-btn" data-category="science">Science</button>
+        <button class="category-btn" data-category="sports">Sports</button>
+        <button class="category-btn" data-category="technology">Technology</button>
+        <button class="category-btn" data-category="business">Business</button>
+        <button class="category-btn" data-category="entertainment">Entertainment</button>
+      </div>
+
+      <select class="category-dropdown">
+        <option value="">Category</option>
+      </select>
+
+    </div>
+    <div class="searchbar">
+      <input type="text" class="search-input">
+      <button class="search-btn">searh</button>
+      <button class="search-icon">🔍</button>
+    </div>
+  </header>
   
   <div id="news-container"></div>
 
