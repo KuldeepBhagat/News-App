@@ -1,4 +1,4 @@
-function loadNews(category = 'technology') {
+function loadNews(category) {
   fetch(`/api/news?category=${category}`)
     .then(res => res.json())
     .then(articles => {
@@ -20,8 +20,61 @@ function loadNews(category = 'technology') {
       console.error('Error fetching news:', error);
     });
 }
-loadNews();
-const health = document.getElementById('health');
-health.addEventListener('click', () => {
-  loadNews('health');
+
+const  categoryButtons = document.querySelectorAll('.category-btn');
+const categoryDropdown = document.querySelector('.category-dropdown');
+
+const categories = [
+  { name: 'Health', vlaue: 'health' },
+  { name: 'Science', value: 'science' },
+  { name: 'Sports', value: 'sports' },
+  { name: 'Technology', value: 'technology' },
+  { name: 'Business', value: 'business' },
+  { name: 'Entertainment', value: 'entertainment' }
+];
+
+categoryButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const  category = button.getAttribute('data-category');
+    loadNews(category);
+  })
 })
+
+categoryDropdown.addEventListener('change', () => {
+  const category = categoryDropdown.value;
+  if (category) {
+    loadNews(category);
+  }
+});
+
+function updateDropdown() {
+  categoryDropdown.innerHTML = '<option value="">Category</option>';
+  let hiddenCount = 0;
+
+  categoryButtons.forEach(button => {
+    const rect = button.getBoundingClientRect();
+    const isHidden = rect.width === 0 && rect.height === 0;
+
+    if (isHidden) {
+      hiddenCount++;
+      const category = button.getAttribute('data-category');
+      const name = button.textContent;
+      const  option = document.createElement('option');
+      option.value = category;
+      option.textContent = name;
+      categoryDropdown.appendChild(option);
+    }
+  });
+  
+  if (hiddenCount > 0) {
+    categoryDropdown.style.display = 'block';
+  } else {
+    categoryDropdown.style.display = 'none';
+  }
+}
+
+loadNews('general');
+updateDropdown();
+window.addEventListener('resize', updateDropdown);
+
+
