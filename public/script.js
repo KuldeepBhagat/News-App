@@ -9,7 +9,7 @@ function loadNews(parmas = {}) {
     query = `q=${parmas.q}`
   }
 
-  fetch(`http://localhost:3000/news?${query}`)
+  fetch(`/api/news?${query}`)
     .then((res) => res.json())
     .then((articles) => {
       const container = document.getElementById("news-container");
