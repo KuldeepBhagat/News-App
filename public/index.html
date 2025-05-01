@@ -1,37 +1,98 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Latest Tech News</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="leftside">
-      <h1>Headlines</h1>
-      <div class="categories">
-        <button class="category-btn" data-category="health">Health</button>
-        <button class="category-btn" data-category="science">Science</button>
-        <button class="category-btn" data-category="sports">Sports</button>
-        <button class="category-btn" data-category="technology">Technology</button>
-        <button class="category-btn" data-category="business">Business</button>
-        <button class="category-btn" data-category="entertainment">Entertainment</button>
+  <head>
+    <title>Latest Tech News</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="site-logo">
+      <h1>Express News</h1>
+    </div>
+    <header>
+      <div class="headline-section">
+        <div>
+          <h1 class="headline-title">Headlines</h1>
+        </div>
+        <div class="searchbar">
+          <input type="text" class="search-input" placeholder="keyword" />
+          <button class="search-btn">searh</button>
+          <button class="search-icon">🔍</button>
+        </div>
+
+        <div class="search-popup" id="search-popup">
+          <input
+            type="text"
+            class="popup-search-input"
+            placeholder="keyword"
+          />
+          <button class="popup-search-btn">Search</button>
+        </div>
       </div>
 
-      <select class="category-dropdown">
-        <option value="">Category</option>
-      </select>
+      <div class="categories-wrapper">
+        <div class="categories">
+          <button class="category-btn" data-category="health">Health</button>
+          <button class="category-btn" data-category="science">Science</button>
+          <button class="category-btn" data-category="sports">Sports</button>
+          <button class="category-btn" data-category="technology">
+            Technology
+          </button>
+          <button class="category-btn" data-category="business">
+            Business
+          </button>
+          <button class="category-btn" data-category="entertainment">
+            Entertainment
+          </button>
+        </div>
+        <select class="category-dropdown">
+          <option value="general">General</option>
+        </select>
+      </div>
 
-    </div>
-    <div class="searchbar">
-      <input type="text" class="search-input">
-      <button class="search-btn">searh</button>
-      <button class="search-icon">🔍</button>
-    </div>
-  </header>
-  
-  <div id="news-container"></div>
+      <div class="source-wrapper">
+        <button class="scroll-btn left">←</button>
+        <div class="source-list-btn" id="source-list-btn">
+          <button class="source-btn" data-category="the-times-of-india">
+            The Times Of India
+          </button>
+          <button class="source-btn" data-category="wired">Wired</button>
+          <button class="source-btn" data-category="the-hindu">
+            The Hindu
+          </button>
+          <button class="source-btn" data-category="news24">News24</button>
+          <button class="source-btn" data-category="ign">IGN</button>
+          <button class="source-btn" data-category="bbc-news">BBC News</button>
+          <button class="source-btn" data-category="cnn">CNN</button>
+          <button class="source-btn" data-category="the-wall-street-journal">
+            The Wall Street Journal
+          </button>
+          <button class="source-btn" data-category="bbc-sport">
+            BBC Sports
+          </button>
+          <button class="source-btn" data-category="al-jazeera-english">
+            Al Jazeera English
+          </button>
+          <button class="source-btn" data-category="bloomberg">
+            Bloomberg
+          </button>
+          <button class="source-btn" data-category="nbc-news">NBC News</button>
+          <button class="source-btn" data-category="the-hill">The Hills</button>
+          <button class="source-btn" data-category="time">Time</button>
+        </div>
+        <button class="scroll-btn right">→</button>
+      </div>
+    </header>
 
-  <!-- Link to external script.js -->
-  <script src="script.js"></script>
-</body>
+    <main class="main-content">
+      <div class="source-section">
+        <h1>Source</h1>
+        <div class="source-container" id="source-list"></div>
+      </div>
+      <div id="news-container"></div>
+    </main>
+
+    <!-- Link to external script.js -->
+    <script src="script.js"></script>
+  </body>
 </html>
