@@ -1,6 +1,5 @@
 function loadNews(parmas = {}) {
   let query = "";
-
   if (parmas.source) {
     query = `source=${parmas.source}`;
   } else if (parmas.category) {
@@ -9,17 +8,24 @@ function loadNews(parmas = {}) {
     query = `q=${parmas.q}`
   }
 
-  fetch(`/api/news?${query}`)
+  fetch(`/api/news?${query}&pageSize=30`)
     .then((res) => res.json())
-    .then((articles) => {
+    .then((result) => {
       const container = document.getElementById("news-container");
+      const newsContainer = document.querySelector('.news-container');
+      newsContainer.scrollTop = 0;
       container.innerHTML = "";
-      articles.forEach((article) => {
-        const div = document.createElement("div");
+      const Articles = result.articles;
+      Articles.forEach((article) => {
+        const div = document.createElement('div');
+        div.className = 'news-items';
         div.innerHTML = `
-          <h3>${article.title}</h3>
-          <img src="${article.urlToImage}" width="300">
-          <p>${article.description}</p>
+          <h1>${article.title}</h1>
+          <p class='author'>Author: <b>${article.author}</b></p>
+          <p> Published At: ${new Date(article.publishedAt).toLocaleString()}</p>
+          <p class='description'>${article.description}</p>
+          <img src="${article.urlToImage}" class='news-image'>
+          <p class='news-content'>${article.content}</p> 
           <a href="${article.url}" target="_blank">Read more</a>
           <hr/>
         `;
@@ -29,6 +35,7 @@ function loadNews(parmas = {}) {
     .catch((error) => {
       console.error("Error fetching news:", error);
     });
+    console.log(`page size: ${page}`)
 }
 
 /*
@@ -74,6 +81,7 @@ const categories = [
 categoryButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const Category = button.getAttribute("data-category");
+
     loadNews({ category: `${Category}` });
   });
 });
@@ -81,6 +89,7 @@ categoryButtons.forEach((button) => {
 categoryDropdown.addEventListener("change", () => {
   const Category = categoryDropdown.value;
   if (Category) {
+
     loadNews({ category: `${Category}` });
   }
 });
@@ -278,6 +287,7 @@ const sourceselect = document.querySelectorAll('.source-btn');
 sourceselect.forEach(button => {
   button.addEventListener('click', () => {
     const source = button.getAttribute('data-category');
+
     loadNews({source});
   })
 })
