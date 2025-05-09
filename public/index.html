@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Latest Tech News</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Top Headlines</title>
+    <link rel="stylesheet" href="css/headline.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <div class="site-logo">
-      <h1>Express News</h1>
-    </div>
     <header>
+
+      <div class="source-wrapper">
+
+        <div class="site-logo">
+          <h1>Express News</h1>
+        </div>
+
+        <button class="scroll-btn left"><</button>
+        <div class="source-list-btn" id="source-list-btn">
+          <button class="source-btn" data-category="the-times-of-india">
+            The Times Of India
+          </button>
+          <button class="source-btn" data-category="wired">Wired</button>
+          <button class="source-btn" data-category="the-hindu">
+            The Hindu
+          </button>
+          <button class="source-btn" data-category="news24">News24</button>
+          <button class="source-btn" data-category="ign">IGN</button>
+          <button class="source-btn" data-category="bbc-news">BBC News</button>
+          <button class="source-btn" data-category="cnn">CNN</button>
+          <button class="source-btn" data-category="the-wall-street-journal">
+            The Wall Street Journal
+          </button>
+          <button class="source-btn" data-category="bbc-sport">
+            BBC Sports
+          </button>
+          <button class="source-btn" data-category="al-jazeera-english">
+            Al Jazeera English
+          </button>
+          <button class="source-btn" data-category="bloomberg">
+            Bloomberg
+          </button>
+          <button class="source-btn" data-category="nbc-news">NBC News</button>
+          <button class="source-btn" data-category="the-hill">The Hills</button>
+          <button class="source-btn" data-category="time">Time</button>
+        </div>
+        <button class="scroll-btn right">></button>
+      </div>
+
       <div class="headline-section">
         <div>
           <h1 class="headline-title">Headlines</h1>
@@ -50,49 +87,61 @@
         </select>
       </div>
 
-      <div class="source-wrapper">
-        <button class="scroll-btn left">←</button>
-        <div class="source-list-btn" id="source-list-btn">
-          <button class="source-btn" data-category="the-times-of-india">
-            The Times Of India
-          </button>
-          <button class="source-btn" data-category="wired">Wired</button>
-          <button class="source-btn" data-category="the-hindu">
-            The Hindu
-          </button>
-          <button class="source-btn" data-category="news24">News24</button>
-          <button class="source-btn" data-category="ign">IGN</button>
-          <button class="source-btn" data-category="bbc-news">BBC News</button>
-          <button class="source-btn" data-category="cnn">CNN</button>
-          <button class="source-btn" data-category="the-wall-street-journal">
-            The Wall Street Journal
-          </button>
-          <button class="source-btn" data-category="bbc-sport">
-            BBC Sports
-          </button>
-          <button class="source-btn" data-category="al-jazeera-english">
-            Al Jazeera English
-          </button>
-          <button class="source-btn" data-category="bloomberg">
-            Bloomberg
-          </button>
-          <button class="source-btn" data-category="nbc-news">NBC News</button>
-          <button class="source-btn" data-category="the-hill">The Hills</button>
-          <button class="source-btn" data-category="time">Time</button>
-        </div>
-        <button class="scroll-btn right">→</button>
-      </div>
     </header>
 
     <main class="main-content">
       <div class="source-section">
-        <h1>Source</h1>
+        <h1>News Sources</h1>
         <div class="source-container" id="source-list"></div>
       </div>
-      <div id="news-container"></div>
+      <div id="news-container" class="news-container"></div>
     </main>
 
-    <!-- Link to external script.js -->
-    <script src="script.js"></script>
+    <footer>
+      <div class="footer-1">
+        <h2>Express News</h2>
+        <div class="contact">
+          <h2>Contact us |</h2>
+          <a href="https://discord.gg/3NrYJpRBah" target="_blank" target="noopener noreferrer"><i class="fa-brands fa-discord"></i></a>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+      <div class="footer-2">
+        <div class="footer-content-1">
+          <h2>News</h2>
+          <a href="dummy.html" target="_blank"><p>Markets</p></a>
+          <a href="dummy.html" target="_blank"><p>Economics</p></a> 
+          <a href="dummy.html" target="_blank"><p>Technology</p></a> 
+          <a href="dummy.html" target="_blank"><p>Politics</p></a> 
+          <a href="dummy.html" target="_blank"><p>Green</p></a> 
+          <a href="dummy.html" target="_blank"><p>All</p></a> 
+        </div>
+        <div class="footer-content-2">
+          <h2>World & Life</h2>
+          <a href="dummy.html" target="_blank"><p>Wealth</p></a> 
+          <a href="dummy.html" target="_blank"><p>Pursuits</p></a> 
+          <a href="dummy.html" target="_blank"><p>Businessweek</p></a> 
+          <a href="dummy.html" target="_blank"><p>CityLab</p></a> 
+          <a href="dummy.html" target="_blank"><p>Sports</p></a> 
+          <a href="dummy.html" target="_blank"><p>Equality</p></a> 
+        </div>
+        <div class="footer-content-3">
+          <h2>Explore</h2>
+          <a href="dummy.html" target="_blank"><p>Newsletters</p></a> 
+          <a href="dummy.html" target="_blank"><p>Explainers</p></a> 
+          <a href="dummy.html" target="_blank"><p>The Big Take</p></a> 
+          <a href="dummy.html" target="_blank"><p>Graphics</p></a> 
+          <a href="dummy.html" target="_blank"><p>Submit a Tip</p></a> 
+          <a href="dummy.html" target="_blank"><p>War</p></a> 
+        </div>
+      </div>
+      <div class="copyright">
+        <b>&copy; 2025 News Express. All rights reserved.</b>
+      </div>
+    </footer>
+    
+    <script src="script/headline.js"></script>
   </body>
 </html>
