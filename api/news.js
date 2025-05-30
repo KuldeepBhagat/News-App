@@ -1,6 +1,8 @@
 import NewsAPI from 'newsapi';
+import dotenv from 'dotenv';
 
-const newsapi = new NewsAPI('32a810dc939a46b0aa36a50062567064');
+dotenv.config();
+const newsapi = new NewsAPI(process.env.NEWS_API);
 
 export default async function handler(req, res) {
 const category = req.query.category;
