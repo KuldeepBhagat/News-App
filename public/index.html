@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Express</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="overlay" id="overlay"></div>
+    <header>
+      <div class="top-header">
+        <div class="options" id="options">
+          <button>☰</button>
+        </div>
+
+        <div id="slide-menu" class="slide-menu">
+          <div class="slide-menu-top">
+            <button id="slide-menu-close">←</button>
+            <div class="date-mobile" id="date-mobile"></div>
+          </div>
+
+          <div class="slide-menu-user">
+            <img src="assets/default-profile.jpg" alt="prfile picture" />
+            <div class="slider-login">
+              <p>Welcome to News Express!!</p>
+              <button class="sign-in" id="sign-in">Sign In / Register</button>
+            </div>
+
+            <div class="sign-in-page" id="sign-in-page">
+              <div class="close-sign-in">
+                <button id="close-sign-in"><b>X</b></button>
+              </div>
+              <a
+                href="https://accounts.google.com/"
+                class="sign-in-option1"
+                target="_blank"
+              >
+                <img src="assets/google-logo.svg" alt="google image" />
+                <p>Sign In with Google</p>
+              </a>
+              <div class="divider">
+                <p><b>OR</b></p>
+              </div>
+              <div class="sign-in-option2">
+                <p>✉</p>
+                <input
+                  type="text"
+                  placeholder="Sign in/Sign Up with Email or Mobile No."
+                />
+              </div>
+              <div class="terms-and-conditon-login">
+                <p>
+                  By signing in or creating an account, you agree with our
+                  <a
+                    href="https://policies.google.com/terms?hl=en-US"
+                    target="_blank"
+                    >Terms & Conditons</a
+                  >
+                  and
+                  <a
+                    href="https://policies.google.com/privacy?hl=en-US"
+                    target="_blank"
+                    >Privacy policy.</a
+                  >
+                </p>
+                <input type="checkbox" name="mycheckbox" />
+                <label for="email"
+                  >Yes subscribe to the for god knows what subscription</label
+                >
+              </div>
+              <button class="login-continue">CONTINUE</button>
+              <a href="" class="forgot-password"><p>FORGOT PASSWORD?</p></a>
+            </div>
+          </div>
+
+          <div class="slide-menu-logo">
+            <select
+              name="language"
+              class="language-dropdown"
+              title="choose language"
+            >
+              <option value="english">English</option>
+              <option value="hindi">Hindi</option>
+              <option value="french">French</option>
+            </select>
+            <img src="assets/slide-menu-logo.png" alt="logo" />
+          </div>
+          <div class="slide-menu-options">
+            <a href="index.html">🏠︎ Home</a>
+            <a href="Headline.html" target="_blank">📰 Top Headlines</a>
+            <a href="headline.html?category=health" target="_blank"
+              >❤︎ Health</a
+            >
+            <a href="headline.html?category=sports" target="_blank"
+              >⚽︎ Sports</a
+            >
+            <a href="headline.html?category=science" target="_blank"
+              >🔬 Science</a
+            >
+            <a href="Headline.html?category=technology" target="_blank"
+              >💻 Technology</a
+            >
+            <a href="headline.html?category=business" target="_blank"
+              >📈 Business</a
+            >
+            <a href="headline.html?category=entertainment" target="_blank"
+              >📺 Entertainment</a
+            >
+          </div>
+          <div class="slide-menu-follow">
+            <p>Follow us On</p>
+            <div class="slide-menu-links">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-discord"></i>
+            </div>
+          </div>
+        </div>
+        <div class="top-header-left">
+          <select
+            name="language"
+            id="language-dropdown"
+            title="choose language"
+          >
+            <option value="english" class="op1">English</option>
+            <option value="hindi">Hindi</option>
+            <option value="french">French</option>
+          </select>
+          <div class="date" id="date"></div>
+        </div>
+        <div class="top-header-right">
+          <button class="epaper"><b>E-Paper</b></button>
+          <button class="subscribe"><b>subscribe to NE</b></button>
+          <button class="signinpc" id="signinpc">Sign In</button>
+          <div class="top-header-social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-discord"></i>
+          </div>
+          <div class="search-icon" id="search-icon">
+            <button>🔍</button>
+          </div>
+        </div>
+        <div class="searchbar" id="searchbar">
+          <div class="searchbar-top">
+            <button class="searchbar-close" id="searchbar-close">←</button>
+            <input type="text" placeholder="Latest news" id="input-box" />
+          </div>
+          <h4>TRENDING</h4>
+          <div class="searchbar-bottom">
+            <p>India vs England</p>
+            <p>Pakistan</p>
+            <p>CBSE class 10 English Exam</p>
+            <p>Canada Work Permit Rule</p>
+            <p>Porn Addiction</p>
+          </div>
+        </div>
+      </div>
+      <div class="header-logo">
+        <img src="assets/header-logo.png" alt="Website header logo" />
+      </div>
+      <div class="bottom-header">
+        <div class="category">
+          <div class="bottom-header-logo">
+            <img src="assets/slide-menu-logo.png" alt="logo" />
+          </div>
+          <a href="index.html">Home |</a>
+          <a href="Headline.html" target="_blank">Top Headlines</a>
+          <a href="headline.html?category=health" target="_blank">Health</a>
+          <a href="headline.html?category=sports" target="_blank">Sports</a>
+          <a href="headline.html?category=science" target="_blank">Science</a>
+          <a href="Headline.html?category=technology" target="_blank"
+            >Technology</a
+          >
+          <a href="headline.html?category=business" target="_blank">Business</a>
+          <a href="headline.html?category=entertainment" target="_blank"
+            >Entertainment</a
+          >
+        </div>
+        <div class="pc-search-icon" id="pc-search-icon">
+          <button>🔍</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="news-container1" class="news-container1">
+        <div class="news-container-section1">
+          <div class="section1-block1">
+            <div class="main-thumbnail" id="main-thumbnail"></div>
+            <div class="main-thumbnail-footer" id="main-thumbnail-footer"></div>
+            <div
+              class="mobile-section1-block2"
+              id="mobile-section1-block2"
+            ></div>
+          </div>
+          <div class="section1-block2" id="section1-block2"></div>
+        </div>
+        <div class="news-container-section2">
+          <p class="trending-heading">Trending News</p>
+          <div
+            class="trending-news-container"
+            id="trending-news-container"
+          ></div>
+          <div class="trending-news-buttons">
+            <button id="trending-btn-left"><</button>
+            <button id="trending-btn-right">></button>
+          </div>
+        </div>
+      </div>
+      <div class="news-container2">
+        <div class="upperline"></div>
+        <button
+          class="news-source-scrollbtn left"
+          id="news-source-scrollbtn-left"
+        >
+          <
+        </button>
+        <div class="news-source-container" id="news-source-container">
+          <div class="abc-news">
+            <a href="https://abcnews.go.com/" target="_blank">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/2a/ABC_News_logo_2021.svg"
+                alt="news-logo"
+              />
+            </a>
+            <h4>Top Headlines</h4>
+            <div class="abc-news-content">
+              <a
+                href="https://abcnews.go.com/US/1-dead-multiple-injured-after-shooting-inside-las/story?id=121894881"
+                target="_blank"
+              >
+                <p>
+                  1 dead, multiple injured after shooting inside Las Vegas
+                  Athletic Club: Police
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://abcnews.go.com/US/wireStory/idaho-police-release-names-6-killed-yellowstone-crash-121900001"
+                target="_blank"
+              >
+                <p>
+                  Idaho police release the names of 6 killed in Yellowstone
+                  crash
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://abcnews.go.com/Politics/trump-blasts-former-fbi-director-james-comey-controversial/story?id=121871648"
+                target="_blank"
+              >
+                <p>
+                  Trump blasts former FBI Director James Comey over
+                  controversial Instagram post
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://abcnews.go.com/Politics/supreme-court-maintains-temporary-block-trumps-alien-enemies/story?id=121889450"
+                target="_blank"
+              >
+                <p>
+                  Supreme Court maintains temporary block on Trump's Alien
+                  Enemies Act deportations
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="bbc-news">
+            <a href="https://www.bbc.com/news" target="_blank">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/BBC_News_2022_%28Alt%29.svg/1280px-BBC_News_2022_%28Alt%29.svg.png"
+                alt="news-logo"
+              />
+            </a>
+            <h4>Top Headlines</h4>
+            <div class="bbc-news-content">
+              <a
+                href="https://www.bbc.com/news/articles/clyv789ejgxo"
+                target="_blank"
+              >
+                <p>
+                  Trump's frantic week of peace brokering hints at what he
+                  really wants
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://www.bbc.com/news/articles/cly3nyqx7xwo"
+                target="_blank"
+              >
+                <p>'My children go to sleep hungry,' Gazans tell the BBC</p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://www.bbc.com/news/articles/cp3q5kqj80vo"
+                target="_blank"
+              >
+                <p>I was on a flight - but British Airways told me I wasn't</p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://www.bbc.com/news/articles/cx2jxn8m88ro"
+                target="_blank"
+              >
+                <p>
+                  Four obstacles for Republican rebels in Trump's 'big,
+                  beautiful' tax bill
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="cnn-news">
+            <a href="https://edition.cnn.com/" target="_blank">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/CNN.svg/1920px-CNN.svg.png"
+                alt="news-logo"
+              />
+            </a>
+            <h4>Top Headlines</h4>
+            <div class="cnn-news-content">
+              <a
+                href="https://edition.cnn.com/2025/05/16/europe/ukraine-russia-talks-npw-analysis-intl"
+                target="_blank"
+              >
+                <p>
+                  A whiplash week of diplomacy leaves Ukraine much where it
+                  started
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://edition.cnn.com/2025/05/16/politics/supreme-court-alien-enemies-act"
+                target="_blank"
+              >
+                <p>
+                  Supreme Court blocks Trump from restarting Alien Enemies Act
+                  deportations
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://edition.cnn.com/2025/05/16/india/india-census-caste-counting-intl-hnk-dst"
+                target="_blank"
+              >
+                <p>
+                  India’s caste system is controversial and discriminatory. So
+                  why is it being included in the next census?
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://edition.cnn.com/2025/05/16/climate/ocean-currents-sea-level-rise-northeast"
+                target="_blank"
+              >
+                <p>
+                  A crucial system of ocean currents is slowing. It’s already
+                  supercharging sea level rise in the US.
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="ign">
+            <a href="https://in.ign.com/" target="_blank">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/IGN_logo.svg/1920px-IGN_logo.svg.png"
+                alt="news-logo"
+              />
+            </a>
+            <h4>Top Headlines</h4>
+            <div class="ign-news-content">
+              <a
+                href="https://in.ign.com/grand-theft-auto-vi/230300/news/gta-6-trailer-2-released-rockstar-tells-fans-to-explore-vice-city-and-beyond"
+                target="_blank"
+              >
+                <p>
+                  GTA 6 Trailer 2 Released, Rockstar Tells Fans to 'Explore Vice
+                  City and Beyond'
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://in.ign.com/tech/230966/news/india-to-unveil-prototype-of-indigenous-gpu-by-end-of-2025-approves-rs3706-crore-hcl-foxconn-semicon"
+                target="_blank"
+              >
+                <p>
+                  Red Dead Redemption 2 Rumored To Get Switch 2 Version and
+                  Next-Gen Upgrade - IGN Daily Fix
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://in.ign.com/video/231127/red-dead-redemption-2-rumored-to-get-switch-2-version-and-next-gen-upgrade-ign-daily-fix"
+                target="_blank"
+              >
+                <p>
+                  Ultraman, The Hammer of Boravia, and The Engineer: Who Are the
+                  Villains of James Gunn's Superman?
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://in.ign.com/asus-rog-ally-x/231124/feature/doom-the-dark-ages-runs-terribly-on-my-handheld-gaming-pc"
+                target="_blank"
+              >
+                <p>
+                  Doom: The Dark Ages Runs Terribly on My Handheld Gaming PC
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="news24">
+            <a href="https://www.news24.com/" target="_blank">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/News24_%28website%29_logo.svg/330px-News24_%28website%29_logo.svg.png"
+                alt="news-logo"
+              />
+            </a>
+            <h4>Top Headlines</h4>
+            <div class="news24-news-content">
+              <a
+                href="https://www.news24.com/southafrica/news/afrikaner-refugees-left-due-to-crime-but-were-statistically-least-likely-to-become-victims-20250516-0713"
+                target="_blank"
+              >
+                <p>
+                  Afrikaner ‘refugees’ left due to crime, but were statistically
+                  least likely to become victims
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://www.news24.com/business/economy/ramaphosa-the-farmer-left-nampo-with-a-new-tractor-20250516-0708"
+                target="_blank"
+              >
+                <p>Ramaphosa, the farmer, left NAMPO with a new tractor</p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://www.news24.com/southafrica/crime-and-courts/nandipha-magudumana-loses-deportation-challenge-npa-prepares-for-trial-20250516-0534"
+                target="_blank"
+              >
+                <p>
+                  Magudumana lawfully deported from Tanzania, says SCA – but one
+                  judge disagrees
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://www.news24.com/business/economy/steenhuisen-afrikaners-who-left-for-us-made-a-bad-call-and-may-not-be-real-farmers-20250515-1056"
+                target="_blank"
+              >
+                <p>
+                  Steenhuisen: Afrikaners who left for US made a bad call — and
+                  may not be real farmers
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="the-hindu">
+            <a href="https://www.thehindu.com/" target="_blank">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/The_Hindu_logo.svg/330px-The_Hindu_logo.svg.png"
+                alt="news-logo"
+              />
+            </a>
+            <h4>Top Headlines</h4>
+            <div class="hindu-news-content">
+              <a
+                href="https://www.thehindu.com/news/international/former-fbi-director-james-comey-interviewed-by-secret-service-over-86-47-social-media-post/article69586534.ece"
+                target="_blank"
+              >
+                <p>
+                  Former FBI director James Comey interviewed by Secret Service
+                  over ''86 47'' social media post
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://www.thehindu.com/news/international/arab-league-summit-kicks-off-in-baghdad-with-gaza-at-top-of-agenda/article69586523.ece"
+                target="_blank"
+              >
+                <p>
+                  Arab League summit kicks off in Baghdad with Gaza at top of
+                  agenda
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://www.thehindu.com/news/national/tamil-nadu/assistant-professor-who-raised-allegations-against-periyar-university-placed-under-suspension/article69583282.ece"
+                target="_blank"
+              >
+                <p>
+                  Assistant professor who raised allegations against Periyar
+                  University placed under suspension
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://www.thehindu.com/business/mumbai-airport-ropes-in-indo-thai-airport-services-for-ground-handling-works/article69586292.ece"
+                target="_blank"
+              >
+                <p>
+                  Mumbai airport ropes in Indo Thai Airport Services for ground
+                  handling works
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="nbc-news">
+            <a href="https://www.nbcnews.com/" target="_blank">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/7a/NBC_logo_2022_%28vertical%29.svg"
+                alt="news-logo"
+              />
+            </a>
+            <h4>Top Headlines</h4>
+            <div class="nbc-news-content">
+              <a
+                href="https://www.nbcnews.com/politics/congress/rfk-jr-testify-congress-last-weeks-contentious-hearings-rcna207687"
+                target="_blank"
+              >
+                <p>
+                  RFK Jr. to testify before Congress again after last week's
+                  contentious hearings
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://www.nbcnews.com/news/us-news/maintenance-worker-sterling-williams-arrested-accused-helping-new-orle-rcna207946"
+                target="_blank"
+              >
+                <p>
+                  Maintenance worker arrested, accused of helping with New
+                  Orleans jail escape
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://www.nbcnews.com/news/us-news/bombing-ivf-clinic-security-wake-call-fertility-centers-experts-say-rcna207675"
+                target="_blank"
+              >
+                <p>
+                  Bombing at IVF clinic should be a security wake-up call for
+                  fertility centers, experts say
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://www.nbcnews.com/politics/national-security/fbi-leaders-pressure-maga-voters-act-corruption-claims-rcna207791"
+                target="_blank"
+              >
+                <p>
+                  FBI leaders under pressure from MAGA voters to act on their
+                  'weaponization' claims
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="tti-news">
+            <a href="https://timesofindia.indiatimes.com/" target="_blank">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/7a/The_times_of_india.svg"
+                alt="news-logo"
+              />
+            </a>
+            <h4>Top Headlines</h4>
+            <div class="tti-news-content">
+              <a
+                href="https://timesofindia.indiatimes.com/world/pakistan/operation-sindoor-indias-military-strike-against-pakistan-pahalgam-attack/articleshow/121295065.cms"
+                target="_blank"
+              >
+                <p>
+                  From Balakot to Bahawalpur: How India redefined retaliation
+                  with Operation Sindoor
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://timesofindia.indiatimes.com/world/rest-of-world/indian-origin-couple-defrauds-2-million-in-new-zealand-through-secret-marriage-flees-to-chennai-wanted-to-retire-at-35/articleshow/121294648.cms"
+                target="_blank"
+              >
+                <p>
+                  Indian-origin couple defrauds $2 million in New Zealand
+                  through secret marriage...
+                </p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://timesofindia.indiatimes.com/spotlight/learn-to-use-data-to-flourish-businesses-with-iim-kozhikodes-advanced-data-analytics-for-managers-programme/articleshow/121260312.cms"
+                target="_blank"
+              >
+                <p>Learn to use data to flourish business with IIM</p>
+              </a>
+              <div class="source-news-divider"></div>
+              <a
+                href="https://timesofindia.indiatimes.com/world/pakistan/pakistan-army-chief-asim-munir-promoted-to-field-marshal-highest-military-rank-in-country/articleshow/121293576.cms"
+                target="_blank"
+              >
+                <p>
+                  Pakistani army chief Asim Munir promoted to field marshal,
+                  highest military rank in country
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <button
+          class="news-source-scrollbtn right"
+          id="news-source-scrollbtn-right"
+        >
+          >
+        </button>
+        <div class="lowerline"></div>
+      </div>
+      <div class="advertisement one">
+        <a target="_blank" href="dummy.html" style="display: inline-block">
+          <video autoplay loop muted playsinline style="pointer-events: none">
+            <source src="assets/advertisement one.mp4" type="video/mp4" />
+            advertisement one
+          </video>
+        </a>
+      </div>
+      <div class="top-article" id="printable">
+        <div class="article-header">
+          <h1>How UPES opens doors to global education</h1>
+          <div class="article-date-social">
+            <p style="font-family: sans-serif">
+              SPOTLIGHT /May 18, 2025, 18:23 IST
+            </p>
+            <div class="article-social">
+              <div class="article-share">
+                <div class="article-share-popup">
+                  <a href="https://x.com/" target="_blank"
+                    ><button>
+                      <img
+                        src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000"
+                        alt="X icon"
+                      /></button
+                  ></a>
+                  <a href="https://www.facebook.com/" target="_blank"
+                    ><button>
+                      <img
+                        src="https://img.icons8.com/?size=100&id=yGcWL8copNNQ&format=png&color=000000"
+                        alt="facebook icon"
+                      /></button
+                  ></a>
+                  <a href="https://www.instagram.com/" target="_blank"
+                    ><button>
+                      <img
+                        src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000"
+                        alt="instagram icon"
+                      /></button
+                  ></a>
+                  <a href="https://in.linkedin.com/" target="_blank"
+                    ><button>
+                      <img
+                        src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000"
+                        alt="Linkedin icon"
+                      /></button
+                  ></a>
+                </div>
+                <button>
+                  <img
+                    src="https://img.icons8.com/?size=100&id=82713&format=png&color=000000"
+                    alt="Share Icon"
+                  />Share
+                </button>
+              </div>
+              <button onclick="window.print()">
+                <img
+                  src="https://img.icons8.com/?size=100&id=123&format=png&color=000000"
+                  alt="Print Icon"
+                />
+              </button>
+              <button>
+                Follow us
+                <img
+                  src="https://img.icons8.com/?size=100&id=0hL1XXinNxFc&format=png&color=000000"
+                  alt="Google news icon"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="article-main-content">
+          <p class="article">
+            <span
+              ><img src="assets/article.webp" alt="" class="article-image"
+            /></span>
+            Global exposure has become an essential aspect of higher education,
+            as the modern professional landscape increasingly demands
+            individuals who can thrive in multicultural environments and
+            collaborate across borders. With businesses operating on a global
+            scale, students must be equipped with the skills and experiences
+            needed to navigate diverse academic, cultural, and professional
+            contexts. Addressing this need, UPES offers a structured global
+            learning approach through international programmes, strategic
+            partnerships, and real-world experiences—preparing students to
+            succeed in an interconnected world.
+          </p>
+          <h3>Global Pathway Programme</h3>
+          <p>
+            The [Global Pathway Programme (GPP)] is a standout initiative that
+            offers students the flexibility to start their academic journey at
+            UPES and complete it at one of its prestigious international partner
+            institutions. With options in countries like the UK, Germany,
+            Australia, Canada, and the USA, this programme offers unmatched
+            value and opportunity. Students have previously continued their
+            education at esteemed institutions such as the University of
+            Edinburgh, The University of Queensland, The University of Auckland,
+            University of Aberdeen, The University of Essex, Nottingham Trent
+            University, and Goldsmiths, University of London, among others. For
+            instance, BTech students have the option to pursue their final years
+            at The University of Queensland, which ranks in the top 50 globally
+            (QS World University Rankings 2024), or at the University of Essex,
+            known for its excellence in data science and analytics. UPES
+            provides end-to-end support, from helping students shortlist
+            universities and navigate visa processes, to offering guidance on
+            fee structures and accommodation. One of the most impactful aspects
+            of the program is the significant fee advantage; students can save
+            up to 45% to 65% on total education costs, making world-class
+            education more accessible. Additionally, students are well-prepared
+            to face academic and cultural shifts abroad, ensuring they
+            transition smoothly and represent UPES on the global stage.
+          </p>
+          <h3>Master’s progression</h3>
+          <p>
+            UPES has strategically partnered with top-ranking global
+            universities to help students prepare for and transition into a
+            Master's degree program, prominent among them being Cranfield
+            University, The University of Queensland, Nottingham University,
+            Moritz College of Law (Ohio State University), University of Sussex,
+            Maurer School of Law (Indiana University Bloomington), Higher School
+            of Economics (HSE), and Nottingham Trent University.
+          </p>
+          <h3>Research collaboration</h3>
+          <p>
+            At UPES, international exposure is not confined to classrooms. From
+            classifying bone X-ray images using convolutional neural networks
+            (CNN) to analysing brain signals and developing smart home
+            automation solutions, students work on cutting-edge international
+            projects that challenge their thinking and expand their horizons.
+            These hands-on experiences not only sharpen technical abilities but
+            also cultivate cross-cultural sensitivity and adaptability. UPES has
+            collaborations with institutions such as the University of Auckland,
+            University of Glasgow, University of Adelaide, University of
+            Nottingham, University of Bologna, University of Gothenburg,
+            University of Sussex, Universiti Teknologi PETRONAS (UTP), and
+            University of Windsor. For example, the School of Engineering has
+            collaborated with Universiti Teknologi PETRONAS (UTP) on sustainable
+            energy research and smart grid solutions, while the School of Health
+            Sciences works closely with the University of Gothenburg on research
+            in neurodevelopmental disorders.
+          </p>
+          <h4>
+            Disclaimer: This article has been produced on behalf of UPES by News
+            Express Spotlight Teeam
+          </h4>
+        </div>
+      </div>
+      <div class="feature-container">
+        <h2>FEATURE</h2>
+        <div class="feature-content">
+          <div>
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/7d04/live/8471dc60-3483-11f0-a920-b9d1eab66fbe.jpg.webp"
+              alt="Feature image"
+            />
+            <a href="dummy.html"
+              ><h3>Is China the winner in the India-Pakistan conflict?</h3></a
+            >
+            <p>
+              Pakistan's Chinese-made fighter jets were battle tested for the
+              first time during hostilities with India.
+            </p>
+            <p style="opacity: 0.5">18 hrs ago| aisa</p>
+          </div>
+          <div>
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/5ce3/live/c8c59d60-34e3-11f0-8519-3b5a01ebe413.jpg.webp"
+              alt="Feature image"
+            />
+            <a href="dummy.html"
+              ><h3>
+                Huge challenges await new president of divided Romania
+              </h3></a
+            >
+            <p>
+              "Fear managed to defeat fury" is how one analyst interpreted
+              liberal Nicusor Dan beating hard-right George Simion to the
+              presidency.
+            </p>
+            <p style="opacity: 0.5">22 hrs ago| Europe</p>
+          </div>
+          <div>
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/290b/live/9cb390e0-34a4-11f0-bebc-f958f2f43d2b.jpg.webp"
+              alt="Feature image"
+            />
+            <a href="dummy.html"
+              ><h3>
+                Who are the winners and losers from the UK-EU agreement?
+              </h3></a
+            >
+            <p>
+              A deal between the UK and European Union (EU) has been agreed at a
+              post-Brexit leaders summit in London.
+            </p>
+            <p style="opacity: 0.5">23 hrs ago| Europe</p>
+          </div>
+          <div>
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/a3e7/live/f9e30be0-1b9c-11f0-bade-39895cf97c9c.jpg.webp"
+              alt="Feature image"
+            />
+            <a href="dummy.html"
+              ><h3>
+                BBC uncovers child sex abuse in South Africa's illegal mines
+              </h3></a
+            >
+            <p>
+              An investigation into the illicit mining sector reveals a world of
+              child exploitation.
+            </p>
+            <p style="opacity: 0.5">1 day ago| Africa</p>
+          </div>
+        </div>
+      </div>
+      <div class="news-clips">
+        <div class="video-embed">
+          <div class="video-embed-header">
+            <h2>Videos</h2>
+            <a href="dummy.html"><h2>View All ></h2></a>
+          </div>
+          <div class="video-embed-main" id="video-embed-main">
+            <iframe
+              allowfullscreen="true"
+              webkitallowfullscreen="true"
+              mozallowfullscreen="true"
+              frameborder="Yes"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              width="800"
+              height="450"
+              src="https://video-api.wsj.com/api-video/player/v3/iframe.html?guid=0CAAA434-A15F-4EAB-8AAC-159C082A85E3"
+            ></iframe>
+            <iframe
+              class="mobile-embed one"
+              allowfullscreen="true"
+              webkitallowfullscreen="true"
+              mozallowfullscreen="true"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              width="800"
+              height="450"
+              src="https://video-api.wsj.com/api-video/player/v3/iframe.html?guid=72235A31-5BCF-473A-B0BD-29A5D7163709"
+            ></iframe>
+            <iframe
+              class="mobile-embed two"
+              allowfullscreen="true"
+              webkitallowfullscreen="true"
+              mozallowfullscreen="true"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              width="800"
+              height="450"
+              src="https://video-api.wsj.com/api-video/player/v3/iframe.html?guid=DC2FFC8C-AEB4-41E2-A68A-061796406AC9"
+            ></iframe>
+          </div>
+          <div class="embed-highlighter">
+            <div class="highlighter-placeholder"></div>
+          </div>
+          <div class="video-embed-footer">
+            <div>
+              <img
+                src="https://images.wsj.net/im-77304763?width=1280&height=720"
+                alt="thumbnai"
+              />
+              <h4 data-value="frame1">
+                Trumps Outline "Golden Dome" plans, Announces General to Lead
+                Effort
+              </h4>
+            </div>
+            <div>
+              <img
+                src="https://images.wsj.net/im-69110037?width=1280&height=720"
+                alt="thumbnai"
+              />
+              <h4 data-value="frame2">
+                Explained: What the High-Stakes Trump-Putin Call Means for Peace
+              </h4>
+            </div>
+            <div>
+              <img
+                src="https://images.wsj.net/im-69368444?width=1280&height=720"
+                alt="thumbnail"
+              />
+              <h4 data-value="frame3">
+                Trump Visits Capitol to Rally Republicans Behind "Big, Beautiful
+                Bill"
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="trending-news">
+          <h2>Trending</h2>
+          <div class="trending-news-content">
+            <a
+              target="_blank"
+              href="https://www.gadgets360.com/ai/news/microsoft-nlweb-ai-natural-language-interface-websites-open-project-unveiled-8461378"
+              ><h1>1</h1>
+              <h3>
+                Microsoft Wants Websites to Have an AI-Powered Natural Language
+                Interface
+              </h3>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.ndtv.com/india-news/asking-for-right-to-free-speech-where-is-your-duty-court-to-ashoka-professor-8468531"
+              ><h1>2</h1>
+              <h3>
+                Professor Arrested For Op Sindoor Post Gets Bail, "Choice Of
+                Words" Lesson
+              </h3>
+            </a>
+            <a
+              target="_blank"
+              href="https://sports.ndtv.com/england-vs-india-2025/bcci-rejecting-ms-dhoni-style-proposal-led-to-rohit-sharma-retirement-report-claims-8461568"
+              ><h1>3</h1>
+              <h3>
+                Rohit Sharma Wanted MS Dhoni-Style Exit From Test Cricket, BCCI
+                Rejected: Report
+              </h3>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.ndtv.com/india-news/spy-youtuber-jyoti-malhotras-whatsapp-chat-with-isi-handler-get-me-married-in-pakistan-8468669"
+              ><h1>4</h1>
+              <h3>
+                "Get Me Married": The Conversation Between 'Spy' YouTuber And
+                ISI Handler
+              </h3>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.ndtv.com/india-news/sbi-staff-in-wont-speak-kannada-video-transferred-siddaramiah-slams-her-8468909"
+              ><h1>5</h1>
+              <h3>
+                "All Bank Employees Must...": Siddaramaiah On 'Won't Speak
+                Kannada' Video
+              </h3>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.ndtv.com/india-news/supreme-court-news-justice-yashwant-varma-cash-at-home-case-delhi-judge-cash-case-go-to-prime-minister-narendra-modi-president-8469301#pfrom=home-ndtv_topstories"
+              ><h1>6</h1>
+              <h3>
+                'Go To PM, President...': Supreme Court Junks Plea In Delhi
+                Judge Cash Case
+              </h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="Sports-body">
+        <div class="sports-main">
+          <div class="sports-content-header">
+            <h2>Sports ❯❯</h2>
+            <div class="sports-header-options" id="sports-content-header">
+              <button data-value="featured" class="active-option">
+                Featured
+              </button>
+              <button data-value="cricket">Cricket</button>
+              <button data-value="football">Football</button>
+              <button data-value="wwe">WWE</button>
+              <button data-value="badminton">Badminton</button>
+              <button data-value="hockey">Hockey</button>
+              <button data-value="tennis">Tennis</button>
+              <button data-value="athletic">Athletics</button>
+              <button data-value="padel">Padel</button>
+              <button data-value="nba">NBA</button>
+              <button data-value="mma">MMA</button>
+            </div>
+          </div>
+          <div class="sports-content-main">
+            <div class="sports-main-content-left" id="sports-main-content-left">
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/sports/cricket/india-vs-england-jasprit-bumrah-gives-bad-news-to-bcci-before-selection-meeting-article-151700987"
+              >
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151700985,thumbsize-2079436,width-1280,height-720,resizemode-75/151700985.jpg"
+                  alt="thumbnail"
+                />
+                <h3>
+                  India vs England Jasprt Bumrah Gives Bad News TO BCCI Before
+                  Selection Meeting
+                </h3>
+              </a>
+            </div>
+            <div
+              class="sports-main-content-right"
+              id="sports-main-content-right"
+            >
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/sports/cricket/sanjiv-goenka-reacts-after-lucknow-super-giants-defeat-gujarat-titans-in-ipl-2025-shares-post-on-x-article-151700420"
+              >
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151700435,thumbsize-41394,width-1280,height-720,resizemode-75/151700435.jpg"
+                  alt="image"
+                />
+                <h3>
+                  Sanjiv Goenka Reacts After Lucknow Super Giants Defeat Gujarat
+                  Titans, Shares Post On X
+                </h3>
+              </a>
+            </div>
+          </div>
+          <div class="sports-content-footer" id="sports-content-footer">
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/sports/cricket/it-comes-from-within-gautam-gambhir-reacts-after-virat-kohli-rohit-sharmas-test-retirements-article-151702408"
+              >
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151702432,thumbsize-37658,width-1280,height-720,resizemode-75/151702432.jpg"
+                  alt="image"
+                />
+                <h3>
+                  Gautam Gambhir Reacts After Virat Kohli, Rohit Sharma's Test
+                  Retirements
+                </h3>
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/sports/sports-ministry-revises-norms-under-scheme-of-assistance-to-nsfs-article-151702625"
+              >
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151702761,thumbsize-48132,width-1280,height-720,resizemode-75/151702761.jpg"
+                  alt="image"
+                />
+                <h3>
+                  SSports Ministry Revises Norms Under Scheme Of Assistance To
+                  NSFs
+                </h3>
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/sports/cricket/englands-ollie-pope-sets-world-record-with-8-test-tons-against-8-different-nations-article-151701995"
+              >
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151702105,thumbsize-40576,width-1280,height-720,resizemode-75/151702105.jpg"
+                  alt="image"
+                />
+                <h3>
+                  England’s Ollie Pope Sets World Record With 8 Test Tons
+                  Against 8 Different Nations
+                </h3>
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/sports/cricket/india-vs-england-selectors-likely-to-reward-karun-nair-sai-sudharsan-in-contention-to-be-part-of-test-team-report-article-151702800"
+              >
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151702820,thumbsize-24712,width-1280,height-720,resizemode-75/151702820.jpg"
+                  alt="image"
+                />
+                <h3>
+                  IND vs ENG: Selectors Likely To Reward Karun Nair; Sai
+                  Sudharsan In Contention To Be Part Of Test Team - Report
+                </h3>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="advertisement two">
+        <a target="_blank" href="dummy.html" style="display: inline-block">
+          <video autoplay loop muted playsinline style="pointer-events: none">
+            <source src="assets/advertisement one.mp4" type="video/mp4" />
+            advertisement one
+          </video>
+        </a>
+      </div>
+      <div class="health">
+        <div class="health-header">
+          <h2>Health And Me ❯❯</h2>
+        </div>
+        <div class="health-main">
+          <div class="health-main-left">
+            <a
+              target="_blank"
+              href="https://www.healthandme.com/health-news/canada-achieved-measles-elimination-status-in-1998-it-could-soon-lose-it-article-151713904"
+            >
+              <img
+                src="https://images.healthandme.com/thumb/msid-151714025,thumbsize-16784,width-900,height-525,resizemode-3/151714025.jpg"
+                alt=""
+              />
+              <h3>
+                Canada Achieved Measles Elimination Status In 1998-It Could Soon
+                Lose It
+              </h3>
+            </a>
+          </div>
+          <div class="health-main-right">
+            <div>
+              <a
+                target="_blank"
+                href="https://www.healthandme.com/health-news/infection-causing-fungal-infection-could-kill-millions-article-151713421"
+              >
+                <p>Infection Causing Fungal Infection Could Kill Millions</p>
+                <img
+                  src="https://images.healthandme.com/thumb/msid-151713458,thumbsize-50398,width-900,height-525,resizemode-3/151713458.jpg"
+                  alt="image"
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.healthandme.com/health-wellness/how-african-rats-help-detect-disease-and-save-lives-article-151711524"
+              >
+                <p>How African Rats Help Detect Disease And Save Lives</p>
+                <img
+                  src="https://images.healthandme.com/thumb/msid-151711539,thumbsize-420892,width-900,height-525,resizemode-3/151711539.jpg"
+                  alt="image"
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.healthandme.com/health-news/23-new-covid-cases-in-delhi-health-minister-issues-advisory-article-151706605"
+              >
+                <p>
+                  23 New Covid Cases In Delhi, Health Minister Issues Advisory
+                </p>
+                <img
+                  src="https://images.healthandme.com/thumb/msid-151706626,thumbsize-997629,width-900,height-525,resizemode-3/151706626.jpg"
+                  alt="image"
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.healthandme.com/nutrition/like-certain-food-intolerance-can-weight-loss-drugs-help-drink-less-alcohol-article-151710864"
+              >
+                <p>
+                  Like Certain Food Intolerance, Can Weight-Loss Drugs Help
+                  Drink Less Alcohol?
+                </p>
+                <img
+                  src="https://images.healthandme.com/thumb/msid-151710887,thumbsize-1409892,width-900,height-525,resizemode-3/151710887.jpg"
+                  alt="image"
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.healthandme.com/health-news/fda-greenlights-nucala-as-new-treatment-for-copd-article-151706416"
+              >
+                <p>FDA Greenlights Nucala as New Treatment for COPD</p>
+                <img
+                  src="https://images.healthandme.com/thumb/msid-151706425,thumbsize-1269038,width-900,height-525,resizemode-3/151706425.jpg"
+                  alt="image"
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.healthandme.com/health-news/nine-month-old-child-tested-positive-for-covid-19-in-bengaluru-article-151708354"
+              >
+                <p>
+                  Nine-month-old Child Tested Positive For Covid-19 In Bengaluru
+                </p>
+                <img
+                  src="https://images.healthandme.com/thumb/msid-151708391,thumbsize-685391,width-900,height-525,resizemode-3/151708391.jpg"
+                  alt="image"
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.healthandme.com/fitness/what-is-japanese-walkthe-fitness-trend-that-makes-you-10-years-younger-article-151685600"
+              >
+                <p>
+                  What Is Japanese Walk—The Fitness Trend That Makes You 10
+                  Years Younger
+                </p>
+                <img
+                  src="https://images.healthandme.com/thumb/msid-151685759,thumbsize-47506,width-900,height-525,resizemode-3/151685759.jpg"
+                  alt="image"
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.healthandme.com/health-wellness/these-3-habits-could-be-a-game-changer-for-your-weight-goals-article-151707166"
+              >
+                <p>
+                  These 3 Habits Could Be A Game Changer For Your Weight Goals
+                </p>
+                <img
+                  src="https://images.healthandme.com/thumb/msid-151707181,thumbsize-853617,width-900,height-525,resizemode-3/151707181.jpg"
+                  alt="image"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tech">
+        <div class="tech-header">
+          <h2>Tech & Gadgets ❯❯</h2>
+        </div>
+        <div class="tech-main">
+          <div class="tech-main-left">
+            <a
+              target="_blank"
+              href="https://www.timesnownews.com/technology-science/x-experiences-major-outage-thousands-report-access-problems-article-151710371"
+            >
+              <img
+                src="https://images.timesnownews.com/thumb/msid-151710369,thumbsize-129964,width-1280,height-720,resizemode-75/151710369.jpg"
+                alt=""
+              />
+              <h3>X Restored After Hours-Long Global Outage</h3>
+            </a>
+          </div>
+          <div class="tech-main-right">
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/technology-science/meta-fails-again-massive-facebook-data-leak-exposes-1-2-billion-user-records-article-151713638"
+              >
+                <p>
+                  Meta Fails Again: Massive Facebook Data Leak Exposes 1.2
+                  Billion User Records
+                </p>
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151713643,thumbsize-60933,width-1280,height-720,resizemode-75/151713643.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/technology-science/openais-secret-device-with-jony-ive-could-be-the-third-must-have-gadget-on-your-desk-article-1517071295"
+              >
+                <p>
+                  OpenAI’s Secret Device With Jony Ive Could Be The Third
+                  Must-Have Gadget On Your Desk
+                </p>
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151707127,thumbsize-22950,width-1280,height-720,resizemode-75/151707127.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/technology-science/openais-secret-device-with-jony-ive-could-be-the-third-must-have-gadget-on-your-desk-article-151707129"
+              >
+                <p>
+                  Jio Launches 5 New Prepaid Plans With Free Cloud Gaming
+                  Access, Starting At Rs 48: Check All Plans And Benefits
+                </p>
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151709525,thumbsize-1605445,width-1280,height-720,resizemode-75/151709525.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/technology-science/teslas-optimus-robot-now-cooks-and-cleans-elon-musk-calls-it-biggest-product-ever-article-151705069"
+              >
+                <p>
+                  Tesla’s Optimus Robot Now Cooks And Cleans, Elon Musk Calls It
+                  'Biggest Product Ever'
+                </p>
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151705088,thumbsize-1236781,width-1280,height-720,resizemode-75/151705088.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/technology-science/google-made-opting-out-of-ai-search-nearly-impossible-for-publishers-article-151708644"
+              >
+                <p>
+                  Google Made Opting Out Of AI Search Nearly Impossible For
+                  Publishers
+                </p>
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151708635,thumbsize-591850,width-1280,height-720,resizemode-75/151708635.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/technology-science/computex-2025-mediatek-showcases-ai-vision-6g-2nm-chip-production-and-nvidia-partnership-article-151704840"
+              >
+                <p>
+                  Computex 2025: MediaTek Showcases AI Vision, 6G, 2nm Chip
+                  Production and NVIDIA Partnership
+                </p>
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151704885,thumbsize-2822613,width-1280,height-720,resizemode-75/151704885.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/technology-science/trump-warns-samsung-of-25-pct-tariff-after-targeting-apple-over-india-shift-article-151707946"
+              >
+                <p>
+                  Trump Warns Samsung Of 25 Pct Tariff After Targeting Apple
+                  Over India Shift
+                </p>
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151707942,thumbsize-1321584,width-1280,height-720,resizemode-75/151707942.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/technology-science/glance-launches-fashion-app-that-uses-ai-to-curate-real-time-outfit-ideas-all-details-article-151704663"
+              >
+                <p>
+                  Glance Launches Fashion App That Uses AI To Curate Real-Time
+                  Outfit Ideas: All Details
+                </p>
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151704665,thumbsize-935167,width-1280,height-720,resizemode-75/151704665.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="business">
+        <div class="business-header">
+          <h2>Business ❯❯</h2>
+        </div>
+        <div class="business-main">
+          <div class="business-main-left">
+            <a
+              target="_blank"
+              href="https://www.timesnownews.com/business-economy/personal-finance/wish-to-build-an-emergency-fund-without-halting-sips-heres-how-article-151723901"
+            >
+              <img
+                src="https://images.timesnownews.com/thumb/msid-151723926,thumbsize-27420,width-1280,height-720,resizemode-75/151723926.jpg"
+                alt=""
+              />
+              <h3>
+                Wish To Build An Emergency Fund Without Halting SIPs? Here's How
+              </h3>
+            </a>
+          </div>
+          <div class="business-main-right">
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/business-economy/companies/walmart-cto-suresh-kumar-faces-scrutiny-as-retail-giant-cuts-1500-tech-jobs-article-151723594"
+              >
+                <p>
+                  Walmart CTO Suresh Kumar Faces Scrutiny as Retail Giant Cuts
+                  1,500 Tech Jobs
+                </p>
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151723612,thumbsize-30374,width-1280,height-720,resizemode-75/151723612.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/business-economy/economy/itr-filing-fy-202425-process-to-begin-in-june-what-to-do-if-you-miss-deadline-article-151722015"
+              >
+                <p>
+                  ITR Filing FY 2024–25: Process to Begin in June - What To Do
+                  If You Miss Deadline
+                </p>
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151722022,thumbsize-66158,width-1280,height-720,resizemode-75/151722022.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/business-economy/personal-finance/want-to-repay-your-personal-loan-faster-save-money-5-essential-tips-for-desi-borrowers-article-151723260"
+              >
+                <p>
+                  Want To Repay Your Personal Loan Faster & Save Money? 5
+                  Essential Tips for Desi Borrowers
+                </p>
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151723250,thumbsize-35514,width-1280,height-720,resizemode-75/151723250.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/business-economy/companies/leela-hotels-ipo-sees-1-overall-subscription-on-day-1-retail-investors-book-7-heres-the-latest-gmp-article-151721522"
+              >
+                <p>
+                  Leela Hotels IPO sees 1% Overall Subscription On Day 1; Retail
+                  Investors Book 7% – Here’s the latest GMP
+                </p>
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151721579,thumbsize-72174,width-1280,height-720,resizemode-75/151721579.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/business-economy/economy/major-tax-relief-in-2025-dont-miss-these-itr-benefits-for-senior-citizens-in-india-article-151722410"
+              >
+                <p>
+                  Major Tax Relief in 2025: Don't Miss THESE ITR Benefits For
+                  Senior Citizens in India
+                </p>
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151722540,thumbsize-25218,width-1280,height-720,resizemode-75/151722540.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/business-economy/argentina-hits-jackpot-unearths-largest-gold-silver-and-copper-deposit-in-30-years-article-151721393"
+              >
+                <p>
+                  Argentina Hits Jackpot! Unearths Largest Gold, Silver and
+                  Copper Deposit in 30 Years
+                </p>
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151721438,thumbsize-2111666,width-1280,height-720,resizemode-75/151721438.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/business-economy/industry/us-india-trade-trump-tariffs-fuel-indias-export-surge-as-firms-capitalise-on-us-china-trade-shift-article-151722204"
+              >
+                <p>
+                  US-India Trade: Trump Tariffs Fuel India’s Export Surge As
+                  Firms Capitalise on US-China Trade Shift
+                </p>
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151722221,thumbsize-37850,width-1280,height-720,resizemode-75/151722221.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://www.timesnownews.com/business-economy/india-now-a-usd-4-trillion-economy-overtakes-japan-to-become-worlds-fourth-largest-niti-aayog-ceo-article-151711423"
+              >
+                <p>
+                  India Now A USD 4 Trillion Economy, Overtakes Japan To Become
+                  World's Fourth Largest
+                </p>
+                <img
+                  src="https://images.timesnownews.com/thumb/msid-151711562,thumbsize-9842,width-1280,height-720,resizemode-75/151711562.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="advertisement three">
+        <a target="_blank" href="dummy.html" style="display: inline-block">
+          <video autoplay loop muted playsinline style="pointer-events: none">
+            <source src="assets/advertisement one.mp4" type="video/mp4" />
+            advertisement one
+          </video>
+        </a>
+      </div>
+      <div class="explainers">
+        <div class="explainers-header">
+          <h2>Explainers ❯❯</h2>
+        </div>
+        <div class="explainers-content">
+          <div>
+            <a
+              target="_blank"
+              href="https://www.timesnownews.com/world/us/us-news/5-damning-allegations-against-zuckerberg-top-brass-in-tell-all-memoir-as-meta-scrambles-to-muzzle-whistleblower-article-119033153"
+            >
+              <img
+                src="https://images.timesnownews.com/thumb/msid-119034124,thumbsize-9190,width-1280,height-720,resizemode-75/119034124.jpg"
+                alt=""
+              />
+              <p>
+                5 Damning Allegations Against Zuckerberg In Tell-All Memoir As
+                Meta Scrambles to Muzzle Whistleblower
+              </p>
+            </a>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              href="https://www.timesnownews.com/world/middle-east/who-are-alawites-the-sect-at-centre-of-syrias-bloodshed-explained-article-118818778"
+            >
+              <img
+                src="https://images.timesnownews.com/thumb/msid-118819277,thumbsize-769809,width-1280,height-720,resizemode-75/118819277.jpg"
+                alt=""
+              />
+              <p>Who Are Alawites? The Sect At Centre Of Syria’s Bloodshed</p>
+            </a>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              href="https://www.timesnownews.com/india/explained-why-is-manipur-on-the-boil-again-kuki-protest-meitei-group-free-movement-1-killed-40-injured-violence-sweeps-state-article-118812853"
+            >
+              <img
+                src="https://images.timesnownews.com/thumb/msid-118813053,thumbsize-45164,width-1280,height-720,resizemode-75/118813053.jpg"
+                alt=""
+              />
+              <p>
+                Explained: Why Is Manipur On The Boil Again? 1 Killed, Over 40
+                Injured As Fresh Violence Sweeps State
+              </p>
+            </a>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              href="https://www.timesnownews.com/india/hindi-imposition-row-ashwini-vaishnaw-mk-stalin-letter-dmk-rahul-gandhi-delimitation-article-118620525"
+            >
+              <img
+                src="https://images.timesnownews.com/thumb/msid-118623351,thumbsize-40282,width-1280,height-720,resizemode-75/118623351.jpg"
+                alt=""
+              />
+              <p>
+                Hindi 'Imposition' Row: Why Centre and Tamil Nadu CM MK Stalin
+                Are At Loggerheads
+              </p>
+            </a>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              href="https://www.timesnownews.com/world/us/us-news/how-donald-trumps-gold-card-could-help-indian-students-in-us-live-their-american-dream-article-118590135"
+            >
+              <img
+                src="https://images.timesnownews.com/thumb/msid-118590148,thumbsize-1026203,width-1280,height-720,resizemode-75/118590148.jpg"
+                alt=""
+              />
+              <p>
+                How Trump's 'Gold Card' Could Help Indian Students In US Live
+                Their American Dream
+              </p>
+            </a>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              href="https://www.timesnownews.com/business-economy/economy/maha-kumbh-2025-ends-today-45-days-65-crore-devotees-and-rs-3-lakh-crore-revenue-a-historic-event-in-numbers-article-118570311"
+            >
+              <img
+                src="https://images.timesnownews.com/thumb/msid-118570659,thumbsize-196794,width-1280,height-720,resizemode-75/118570659.jpg"
+                alt=""
+              />
+              <p>
+                Maha Kumbh 2025 Ends Today: 45 Days, 65 Crore Devotees And Rs 3
+                Lakh Crore Revenue - A Historic Event In Numbers
+              </p>
+            </a>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              href="https://www.timesnownews.com/delhi/anti-pollution-missteps-liquor-policy-inside-bjps-cag-report-to-expose-aap-article-118548101"
+            >
+              <img
+                src="https://images.timesnownews.com/thumb/msid-118548485,thumbsize-2476019,width-1280,height-720,resizemode-75/118548485.jpg"
+                alt=""
+              />
+              <p>
+                Anti-pollution 'Missteps', Liquor Policy: Inside BJP's CAG
+                Report To 'Expose' AAP
+              </p>
+            </a>
+          </div>
+          <div>
+            <a
+              target="_blank"
+              href="https://www.timesnownews.com/business-economy/industry/who-created-pi-network-how-they-are-changing-the-crypto-game-article-118405407"
+            >
+              <img
+                src="https://images.timesnownews.com/thumb/msid-118405712,thumbsize-1060576,width-1280,height-720,resizemode-75/118405712.jpg"
+                alt=""
+              />
+              <p>
+                Who Created Pi Network? How They Are Changing The Crypto Game
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="webstories">
+        <div class="webstories-header">
+          <h1>
+            <img
+              src="https://img.icons8.com/?size=100&id=uMsioPngThwm&format=png&color=000000"
+              alt=""
+            />WEBSTORIES
+          </h1>
+          <div class="webstories-share-icon">
+            <button>
+              <img
+                src="https://img.icons8.com/?size=100&id=11537&format=png&color=000000"
+                alt=""
+              />
+              Share
+            </button>
+          </div>
+        </div>
+        <div class="webstory-main">
+          <div class="webstories-content-close" id="webstories-content-close">
+            <button>X</button>
+          </div>
+          <button class="webstory-scroll left" id="webstory-scroll-left">
+            ‹
+          </button>
+          <div
+            class="webstories-content-container"
+            id="webstories-content-container"
+          ></div>
+          <button class="webstory-scroll right" id="webstory-scroll-right">
+            ›
+          </button>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-header">
+          <img src="assets/slide-menu-logo.png" alt="">
+        </div>
+        <div class="footer-main">
+          <div>
+            <h2>Follow News Express on: </h2>
+            <div>
+              <button><img src="https://img.icons8.com/?size=100&id=fJp7hepMryiw&format=png&color=000000" alt=""></button>
+              <button><img src="https://img.icons8.com/?size=100&id=8818&format=png&color=000000" alt=""></button>
+              <button><img src="https://img.icons8.com/?size=100&id=32309&format=png&color=000000" alt=""></button>
+              <button><img src="https://img.icons8.com/?size=100&id=30888&format=png&color=000000" alt=""></button>
+            </div>
+          </div>
+          <div>
+            <button>Terms of use</button>
+            <button>About the NE</button>
+            <button>Privacy Policy</button>
+            <button>Contact NE</button>
+          </div>
+          <div>
+            <p>Copyright 2025 NE. All rights reserved.  The NE is not responsible for the content of external sites. <b>Read about our approach to external linking.</b></p>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+    <script src="script/main.js" type="module"></script>
+  </body>
+</html>
