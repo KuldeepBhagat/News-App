@@ -1,11 +1,15 @@
-import sportsData from "./sports.json" assert { type: "json" };
+import { readFileSync } from "fs";
+import path from "path";
 
 export default async function handler(req, res) {
-    const option = req.query.option;
+  const filePath = path.join(process.cwd(), "sports.json");
+  const jsonData = JSON.parse(readFileSync(filePath, "utf8"));
 
-    if (!option || !sportsData[option]) {
+  const option = req.query.option;
+
+  if (!option || !jsonData[option]) {
     return res.status(404).json({ error: "Option not found" });
-    }
+  }
 
-    res.status(200).json(sportsData[option]);
+  res.status(200).json(jsonData[option]);
 }

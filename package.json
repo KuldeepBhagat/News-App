@@ -1,15 +1,29 @@
 {
+<<<<<<< HEAD
   "name": "news-app-final",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+=======
+  "name": "my-news-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+>>>>>>> 62e19712be86fec6cdb8a541160a4b23bb82fbca
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "type": "module",
+=======
+  "type": "commonjs",
+>>>>>>> 62e19712be86fec6cdb8a541160a4b23bb82fbca
   "dependencies": {
     "dotenv": "^16.5.0",
     "mongodb": "^6.16.0",
