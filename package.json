@@ -17,7 +17,6 @@
   "author": "",
   "license": "ISC",
   "type": "module",
-  "type": "commonjs",
   "dependencies": {
     "dotenv": "^16.5.0",
     "mongodb": "^6.16.0",
