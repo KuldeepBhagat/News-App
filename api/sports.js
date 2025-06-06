@@ -6,6 +6,7 @@ dotenv.config();
 const client = new MongoClient(process.env.MONGO_URI);
 
 export default async function handler(req, res) {
+<<<<<<< HEAD
   try {
     await client.connect();
     const db = client.db("NewsApp");
@@ -21,3 +22,16 @@ export default async function handler(req, res) {
     await client.close();
   }
 }
+=======
+  const filePath = path.join(process.cwd(), "sports-data.json");
+  const jsonData = JSON.parse(readFileSync(filePath, "utf8"));
+
+  const option = req.query.option;
+
+  if (!option || !jsonData[option]) {
+    return res.status(404).json({ error: "Option not found" });
+  }
+
+  res.status(200).json(jsonData[option]);
+}
+>>>>>>> e082c7e80ec8a4a3fbc7b5df10f333485d2f09e0
